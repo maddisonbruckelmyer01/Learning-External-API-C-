@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiHelper.cs" />
+    <Compile Include="ComicModel.cs" />
+    <Compile Include="ComicProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

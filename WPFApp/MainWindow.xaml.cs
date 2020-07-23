@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoLibrary;
+using System;
 using System.Windows;
 
 namespace WPFApp
@@ -11,6 +12,7 @@ namespace WPFApp
         public MainWindow()
         {
             InitializeComponent();
+            ApiHelper.InitializeClient();
         }
     }
 }

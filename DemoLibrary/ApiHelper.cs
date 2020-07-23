@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class ApiHelper
+    public static class ApiHelper
     {
         public static HttpClient ApiClient { get; set; }
 
