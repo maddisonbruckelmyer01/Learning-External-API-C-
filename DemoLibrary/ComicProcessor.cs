@@ -10,7 +10,9 @@ namespace DemoLibrary
 {
     public class ComicProcessor
     {
-        public async Task LoadComic(int comicNumber = 0)
+
+       public int MaxComicNumber { get; set; }
+        public static async Task<ComicModel> LoadComic(int comicNumber = 0)
         {
             string url = "";
 
@@ -27,7 +29,13 @@ namespace DemoLibrary
             {
                 if (response.IsSuccessStatusCode)
                 {
+                    ComicModel comic = await response.Content.ReadAsAsync<ComicModel>();
 
+                    return comic;
+                }
+                else
+                {
+                    throw new Exception(response.ReasonPhrase);
                 }
             }
         }

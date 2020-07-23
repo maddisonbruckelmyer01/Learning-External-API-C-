@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp"
-        mc:Ignorable="d" FontSize="22"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" FontSize="22" Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
@@ -13,11 +13,11 @@
         </Grid.RowDefinitions>
         
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="previousImageButton" Padding="15" Margin="15">Previous</Button>
+            <Button x:Name="previousImageButton" Padding="15" Margin="15" Click="previousImageButton_Click">Previous</Button>
             <Button x:Name="sunInformationButton" Padding="15" Margin="15">Sun Information</Button>
-            <Button x:Name="nextImageButton" Padding="15" Margin="15">Next</Button>
+            <Button x:Name="nextImageButton" Padding="15" Margin="15" Click="nextImageButton_Click">Next</Button>
         </StackPanel>
 
-        <Image Grid.Row="1" x:Name="comicImage" />
+        <Image Grid.Row="1" x:Name="comicImage" Margin="20"/>
     </Grid>
 </Window>
