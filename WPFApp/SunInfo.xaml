@@ -8,7 +8,7 @@
         Title="SunInfo" Height="450" Width="800">
     <Grid>
         <StackPanel>
-            <Button x:Name="loadSunInfo" Margin="20">Load Sun Info</Button>
+            <Button x:Name="loadSunInfo" Margin="20" Click="loadSunInfo_Click">Load Sun Info</Button>
             <TextBlock x:Name="sunriseText" Margin="20" />
             <TextBlock x:Name="sunsetText" Margin="20" />
         </StackPanel>
